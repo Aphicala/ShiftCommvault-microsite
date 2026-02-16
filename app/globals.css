@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gradient-start: #e94e87;
+  --gradient-middle: #8b5cf6;
+  --gradient-end: #4f46e5;
 }
 
 @theme inline {
@@ -12,15 +15,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #e94e87 0%, #8b5cf6 50%, #4f46e5 100%);
+  }
+
+  .gradient-bg-light {
+    background: linear-gradient(135deg, rgba(233, 78, 135, 0.1) 0%, rgba(139, 92, 246, 0.1) 50%, rgba(79, 70, 229, 0.1) 100%);
+  }
 }
