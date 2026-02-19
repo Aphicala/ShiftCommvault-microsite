@@ -135,7 +135,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 hover:from-pink-600 hover:via-purple-700 hover:to-indigo-700 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-lg text-base sm:text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                Register Now
+                Sign Up For SHIFT Now
               </a>
             </div>
           </div>
@@ -255,7 +255,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
               {/* Left side - Registration Info */}
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Register Now</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">Sign up for SHIFT now</h2>
                 <p className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 text-gray-200">
                   Don&apos;t miss out on the opportunity to be part of SHIFT 2026. Register now to secure your spot and stay updated with the latest event details.
                 </p>
