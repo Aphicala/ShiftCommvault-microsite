@@ -8,15 +8,15 @@ export default function Home() {
     { name: 'Balaji Rao', image: 'Balaji Rao.jpg', title: 'AVP- India & SAARC', company: 'Commvault' },
     { name: 'Bhavyan Mehta', image: 'Bhayvan Mehta.jpg', title: 'VP Engineering', company: 'Commvault' },
     { name: 'Vijay Anand', image: 'Vijay Anand.jpg', title: 'Director, Sales Engineering', company: 'Commvault' },
-    { name: 'Aneesh Dhawan', image: 'Aneesh Dhawan.png', title: 'Director Sales- India & SAARC', company: 'Commvault' },
-    { name: 'Amit Mahajan', image: 'Amit Mahajan.jpg', title: 'Senior DIrector, Development', company: 'Commvault' },
-    { name: 'Sachin Bawse', image: 'Sachin Bawse.jpg', title: 'GTM Specialist Solution Architect India', company: 'AWS' },
-    { name: 'Varun Kumar', image: 'Varun Kumar.png', title: 'Manager - Solutions Engineering', company: 'NetApp' },
-    { name: 'Andy Walsky', image: 'Andy Walsky.jpg', title: 'VP of EMEA & APAC Sales', company: 'Exagrid' },
-    { name: 'Haresh Chandnani', image: 'Haresh Chandnani.jpg', title: 'Systems Engineer', company: 'Pure Storage' },
-    { name: 'Rakesh Thayyil', image: 'Rakesh Thayyil.jpg', title: 'Associate Director- Research', company: 'Think Teal' },
-    { name: 'Shikha Singh', image: 'Shikha Singh.jpg', title: 'Emcee', company: '' },
-    { name: 'Zaheer Khan', image: 'Zaheer Khan.jpg', title: 'Former Indian Cricketer', company: '' },
+    // { name: 'Aneesh Dhawan', image: 'Aneesh Dhawan.png', title: 'Director Sales- India & SAARC', company: 'Commvault' },
+    // { name: 'Amit Mahajan', image: 'Amit Mahajan.jpg', title: 'Senior DIrector, Development', company: 'Commvault' },
+    // { name: 'Sachin Bawse', image: 'Sachin Bawse.jpg', title: 'GTM Specialist Solution Architect India', company: 'AWS' },
+    // { name: 'Varun Kumar', image: 'Varun Kumar.png', title: 'Manager - Solutions Engineering', company: 'NetApp' },
+    // { name: 'Andy Walsky', image: 'Andy Walsky.jpg', title: 'VP of EMEA & APAC Sales', company: 'Exagrid' },
+    // { name: 'Haresh Chandnani', image: 'Haresh Chandnani.jpg', title: 'Systems Engineer', company: 'Pure Storage' },
+    // { name: 'Rakesh Thayyil', image: 'Rakesh Thayyil.jpg', title: 'Associate Director- Research', company: 'Think Teal' },
+    // { name: 'Shikha Singh', image: 'Shikha Singh.jpg', title: 'Emcee', company: '' },
+    // { name: 'Zaheer Khan', image: 'Zaheer Khan.jpg', title: 'Former Indian Cricketer', company: '' },
   ];
 
   const platinumSponsors = [
@@ -35,19 +35,19 @@ export default function Home() {
 
       {/* Banner Section */}
       <section className="relative w-full mt-16 sm:mt-20 bg-white">
-        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
+        <div className="relative w-full h-125 sm:h-150 md:h-105 lg:h-125">
           <Image
             src="/images/SHIFT_Desktop-LP-Header_Jakarta_5.7.26.png"
             alt="SHIFT Event Banner"
             fill
-            className="object-contain object-center hidden md:block"
+            className="object-cover object-center hidden md:block"
             priority
           />
           <Image
             src="/images/SHIFT_Mobile-LP-Header_Jakarta_5.7.26.png"
             alt="SHIFT Event Banner Mobile"
             fill
-            className="object-contain object-center md:hidden"
+            className="object-cover object-center md:hidden"
             priority
           />
         </div>
@@ -111,9 +111,9 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
               Our Speakers
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-8">
               {speakers.map((speaker, index) => (
-                <div key={index} className="flex flex-col items-center text-center">
+                <div key={index} className="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1.35rem)] flex flex-col items-center text-center">
                   <div className="relative w-full aspect-square mb-3 sm:mb-4 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                     <Image
                       src={`/images/${speaker.image}`}
@@ -152,92 +152,45 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               {/* Agenda Items */}
               <AgendaItem
-                time="08:15 AM – 09:15 AM"
-                title="Breakfast"
+                time="08:30 AM – 09:30 AM"
+                title="Registration"
               />
               <AgendaItem
-                time="09:15 AM – 09:25 AM"
-                title="[OPENING ACT] | The SHIFT Ignition - Experiential Artist"
+                time="09:20 AM – 09:30 AM"
+                title="Doors Open"
               />
               <AgendaItem
-                time="09:30 AM – 09:55 AM"
-                title="[VISION KEYNOTE] | The AI Imperative: The Next Standard of Resilience"
-                speaker="Balaji Rao, Commvault"
-                description="Enterprise resilience is being rewritten. This keynote showcases how next-generation innovations are setting a new benchmark by unifying intelligent cyber recovery, AI-driven threat detection, and automated security orchestration. Learn how these capabilities work together to deliver faster recovery, stronger protection, and operational confidence across today's complex, multi-cloud environments—so organizations can withstand disruption and bounce back smarter than ever."
+                time="09:30 AM – 09:45 AM"
+                title="[WELCOME KEYNOTE] | The AI Imperative: Resilience Reimagined"
+                speaker="Martin Creighan"
+                description="The AI-driven, agentic enterprise is a different animal. It operates instantaneously, autonomously, and at massive scale. Yet, the data your organisation depends on has never been further from its origin or more complex and vulnerable. Consequently, CIOs and CISOs must rethink the availability, accuracy, integrity, and dependability of its data for this new AI era. In his keynote, Chief Commercial Officer Gary Merrill will delve into how Commvault helps enterprises confidently and safely scale resilience to power a continuous and competitive AI advantage."
               />
               <AgendaItem
-                time="10:00 AM – 10:35 AM"
-                title="[PRODUCT KEYNOTE] | The Next Standard of Resilience"
-                speaker="Bhavyan Mehta, Commvault"
-                description="Cyber resilience is no longer just about defense—it's a decisive competitive advantage. Join Balaji as he explores how organizations can move beyond reactive security models and harness AI to stay ahead of relentless, sophisticated cyber threats. Discover how AI-powered intelligence enables continuous protection, ensures uninterrupted business operations, and accelerates the shift to resilient, cloud-native architectures—turning today's threat landscape into an opportunity for long-term advantage."
+                time="09:45 AM – 10:15 AM"
+                title="Industry Speaker"
               />
               <AgendaItem
-                time="10:35 AM – 10:50 AM"
-                title="TEA / COFFEE BREAK | Booth Visits"
+                time="10:15 AM – 10:35 AM"
+                title="AI Resilience Fireside Chat"
+                speaker="External Speaker: ...  Facilitator: Garreth Russel"
               />
               <AgendaItem
-                time="10:50 AM – 11:05 AM"
-                title="KAHOOT"
-                speaker="Shikha Singh, Emcee"
+                time="10:35 AM – 11:25 AM"
+                title="[INNOVATION KEYNOTE] | The Next Standard of Resilience"
+                speaker="Garreth Russel"
+                description="AI is transforming the very fabric of cyber resilience. In this mainstage innovation showcase, Commvault’s Chief Technology and AI Officer, Pranay Ahlawat, will unveil breakthrough innovations that redefine how organisations secure, manage, and recover their data in the AI era."
               />
               <AgendaItem
-                time="11:05 AM – 11:30 AM"
-                title="[PARTNER SPOTLIGHT] | Securing Data to Accelerate Innovation: Protecting AI Data at Cloud Scale with Commvault and AWS"
-                speaker="Sachin Bawse, AWS + Vijay Anand, Commvault"
+                time="11:25 AM – 12:15 PM"
+                title="Panel Discussion"
               />
               <AgendaItem
-                time="11:35 AM – 12:10 PM"
-                title="[CYBER RESILIENCE PANEL DISCUSSION] | The Adaptive Enterprise: Powering Growth in the AI Era"
-                speaker="Haresh Chandani, Pure + Customer + Balaji Rao, Commvault"
+                time="12:15 PM – 12:30 PM"
+                title="Locknote"
               />
               <AgendaItem
-                time="12:15 PM – 12:40 PM"
-                title="[PARTNER SPOTLIGHT] | UNLOCKING POSSIBILITIES with Intelligent Data Infrastructure"
-                speaker="Varun kumar, NetApp + Vijay Anand, Commvault"
-              />
-              <AgendaItem
-                time="12:45 PM – 01:40 PM"
-                title="LUNCH BREAK | Booth Visits"
-                description="CXO EXCHANGE | PRIVATE CXO NETWORKING LUNCH"
-              />
-              <AgendaItem
-                time="01:40 PM – 02:00 PM"
-                title="KAHOOT"
-              />
-              <AgendaItem
-                time="02:00 PM – 02:20 PM"
-                title="[CYBER RESILIENCE PANEL DISCUSSION] | The Resilient Enterprise: Architecting Security in the AI Era"
-                speaker="Andy Walsky, ExaGrid + Customer + Aneesh Dhawan, Commvault"
-              />
-              <AgendaItem
-                time="02:25 PM – 03:00 PM"
-                title="[THE ANALYST PERSPECTIVE] | Navigating the Cyber Resilience Imperative in India's AI-Driven Cloud Era"
-                speaker="Rakesh Thayyil, Think Teal"
-                description="Leading industry analysts provide an independent, data-driven perspective on the critical shifts transforming cyber resilience in India—examining how AI-powered threats, multi-cloud complexity are reshaping enterprise data protection strategies. Gain unbiased insights on regional market trends, and actionable best practices to help organizations build measurable resilience in an increasingly volatile threat landscape."
-              />
-              <AgendaItem
-                time="03:05 PM – 03:30 PM"
-                title="Commvault Cloud Unity"
-                speaker="Amit Mahajan, Commvault"
-                description="Discover how Cloud Unity is redefining resilience for the cloud-first era. This session unveils the latest innovations in unified protection, identity-aware defense, autonomous recovery, and AI-driven intelligence—showing how a single, intelligent platform replaces fragmented tools and becomes the operational fabric for secure, always-on enterprises."
-              />
-              <AgendaItem
-                time="03:30 PM – 03:45 PM"
-                title="TEA / COFFEE BREAK | Booth Visits"
-              />
-              <AgendaItem
-                time="03:45 PM – 04:20 PM"
-                title="[RESILIENCE DIARIES] | Session by Motivational Speaker"
-                speaker="Zaheer Khan, Former Indian Cricketer"
-                description="From bouncing back from career-threatening injuries to spearheading India's 2011 World Cup triumph, Zaheer Khan reveals how champions build resilience, adapt to changing conditions, and deliver when stakes are highest—lessons every enterprise needs in the face of today's relentless cyber threats."
-              />
-              <AgendaItem
-                time="04:30 PM – 05:00 PM"
-                title="Networking and Close of Event"
-              />
-              <AgendaItem
-                time="05:00 PM"
-                title="Close of Event"
+                time="12:30 PM – 2:30 PM"
+                title="Lunch"
               />
             </div>
           </div>
