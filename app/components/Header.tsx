@@ -9,8 +9,8 @@ export default function Header() {
   const navItems = [
     { name: 'Overview', href: '#overview' },
     { name: 'Speakers', href: '#speakers' },
-    { name: 'Agenda', href: '#agenda' },
-    { name: 'Sponsors', href: '#sponsors' },
+    // { name: 'Agenda', href: '#agenda' },
+    // { name: 'Sponsors', href: '#sponsors' },
     { name: 'Register', href: 'https://event.kimcommunication.com/fcf94f65', external: true },
   ];
 
