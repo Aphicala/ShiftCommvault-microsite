@@ -58,10 +58,10 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
             <div className="text-center mb-8">
-              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-2">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-2">
                 7 May 2026 | 08:30 – 14:00 WIB
               </p>
-              <p className="text-base sm:text-lg text-gray-600">
+              <p className="text-base sm:text-lg text-gray-600 font-medium">
                 Ballroom 1 & 2 A, Fairmont Hotel Jakarta
               </p>
             </div>
@@ -261,7 +261,7 @@ export default function Home() {
                 </p>
                 <div className="mb-6 md:mb-8">
                   <h3 className="text-lg sm:text-xl font-semibold mb-2">Location</h3>
-                  <p className="mb-1 text-sm sm:text-base">Ballroom 1 & 2 A, Fairmont Hotel Jakarta</p>
+                  <p className="mb-1 text-sm sm:text-base font-medium">Ballroom 1 & 2 A, Fairmont Hotel Jakarta</p>
                   <p className="text-gray-300 text-sm sm:text-base">Kota BNI JL. Jend. Sudirman Kav. 1, Jakarta 10220 Indonesia</p>
                   <p className="font-semibold mt-2 text-pink-400 text-sm sm:text-base">Date: May 7, 2026</p>
                 </div>
