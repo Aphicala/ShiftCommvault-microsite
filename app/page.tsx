@@ -143,15 +143,15 @@ export default function Home() {
       </section>
 
       {/* Agenda Section */}
-      <section id="agenda" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section id="agenda" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
               Event Agenda
             </h2>
-            <div className="space-y-4 sm:space-y-6">
-              {/* Agenda Items */}
-              <AgendaItem
+            <div className="space-y-4 sm:space-y-6"> */}
+      {/* Agenda Items */}
+      {/* <AgendaItem
                 time="08:30 AM – 09:30 AM"
                 title="Registration"
               />
@@ -195,18 +195,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sponsors Section */}
-      <section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      {/* <section id="sponsors" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 md:mb-12">
               Our Sponsors
-            </h2>
+            </h2> */}
 
-            {/* Platinum Sponsors */}
-            <div className="mb-8 md:mb-12">
+      {/* Platinum Sponsors */}
+      {/* <div className="mb-8 md:mb-12">
               <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-6 md:mb-8">
                 Platinum Sponsors
               </h3>
@@ -223,10 +223,10 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
-            {/* Gold Sponsors */}
-            <div>
+      {/* Gold Sponsors */}
+      {/* <div>
               <h3 className="text-xl sm:text-2xl font-semibold text-center text-gray-800 mb-6 md:mb-8">
                 Gold Sponsors
               </h3>
@@ -246,7 +246,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Register Section with Map */}
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
